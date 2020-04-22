@@ -24,6 +24,11 @@ $(call inherit-product-if-exists, vendor/oneplus/oneplus5/oneplus5-vendor.mk)
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_MINIMAL_APPS := false
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
