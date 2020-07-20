@@ -105,6 +105,10 @@ PRODUCT_PACKAGES += \
     OnePlus5FrameworksPA \
     OnePlus5TFrameworks
 
+# Power
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml
