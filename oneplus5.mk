@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system
 
+# Display Mode
+PRODUCT_PACKAGES += \
+    DisplayMode
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/keylayout/fpc1020.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/fpc1020.kl \
